@@ -50,6 +50,12 @@ import org.springframework.core.io.Resource;
  * @deprecated as of Spring 3.1 in favor of {@link DefaultListableBeanFactory} and
  * {@link XmlBeanDefinitionReader}
  */
+/*
+*此类通过解析xml对类进行定义。
+*
+*通过使用两个方法创建新的xmlBeanFactory，一个通过给定的资源，一个是通过输入流创建。
+*都使用dom模型进行解析
+*/
 @Deprecated
 @SuppressWarnings({"serial", "all"})
 public class XmlBeanFactory extends DefaultListableBeanFactory {
